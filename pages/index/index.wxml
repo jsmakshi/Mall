@@ -1,0 +1,52 @@
+<!--index.wxml-->
+<view class="page">
+  <view class="header">
+    <view class="bg">
+      <image src="https://cdn2.qumeirongba.com/mia/xcx/background.png"></image>
+    </view>
+    <view class="text-box">
+      <view class="top">
+        <view class="name">BEEPLUS 超级工坊</view>
+        <view class="btn-box">
+          <view class="left">自取</view>
+          <view class="right actve">外卖</view>
+        </view>
+      </view>
+      <view class="desc">深圳市南山区海德二道 BEEPLUS 超级工坊</view>
+    </view>
+  </view>
+  <view class="content">
+    <scroll-view class="menu-nav"  style="height: calc(100vh - 244)rpx" scroll-y="true" scroll-with-animation="true" enable-back-to-top="true" scroll-top="100px"	 scroll-into-view="{{toNavView}}">
+      <view wx:for="{{menuNav}}" wx:key="index" class="item {{menuNavIndex == index && 'active'}}" bindtap="{{menuNavIndex != index && 'menuClick'}}"
+         data-index="{{index}}"  id="{{'nav'+index}}">
+        <view class="icon">
+          <image class="img" src="{{item.icon}}"></image>
+        </view>
+        <view class="name">{{item.name}}</view>
+      </view>
+      <view class="item"></view>
+    </scroll-view>
+    <scroll-view class="menu-list" style="height: calc(100vh - 244)rpx" scroll-y="true" scroll-with-animation="true" enable-back-to-top="true" scroll-into-view="{{toView}}" bindscroll="scrollList">
+      <swiper class="banner">
+        <swiper-item wx:for="{{banner}}" wx:key="index" indicator-dots="true">
+          <image class="img" src="{{item}}"></image>
+        </swiper-item>
+      </swiper>
+      <view class="list" wx:for="{{list}}" wx:key="index"  id="{{'mai'+index}}">
+        <view class="title">{{item.title}}</view>
+        <view class="item" wx:for="{{item.items}}" wx:for-index="itemIndex" wx:key="itemIndex">
+          <image class="cover" src="{{item.pic}}"></image>
+          <view class="info">
+            <view class="name">{{item.name}}</view>
+            <view class="desc">{{item.desc}}</view>
+            <image class="vip" src="../../images/cjvip.png"></image>
+            <view class="price">
+              <view class="fh">￥</view>{{item.price}}
+              <view class="x-size"> / 66</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

@@ -1,0 +1,25 @@
+
+<!-- showCapsule: 1, // 是否显示左上角图标   1表示显示    0表示不显示
+title: '', // 导航栏 中间的标题
+textColor: '#fff', // 标题颜色
+bgColor: '#3281ff', // 导航栏背景颜色
+btnBgColor: '#2B6ED9', // 胶囊按钮背景颜色
+iconColor: 'white', // icon颜色 black/white
+borderColor: 'rgba(255, 255, 255, 0.3)' // 边框颜色 格式为 rgba()，透明度为0.3 -->
+<view class='navbar-wrap' 
+  style='height:{{navbarHeight}}px;padding-top:{{statusBarHeight}}px;background:{{navbarData.bgColor ? navbarData.bgColor : "transparent"}}'>  
+  <view class="navbar-text"
+    style='line-height:{{navbarBtn.height + navbarBtn.top}}px;color:{{navbarData.textColor ? navbarData.textColor : "#000"}};'>
+    {{navbarData.title ? navbarData.title : ""}}
+  </view>
+  <view class="navbar-icon"
+    wx:if='{{navbarData.showCapsule ? true : false}}'
+    style="top:{{navbarBtn.top + statusBarHeight}}px;left:{{navbarBtn.right}}px;height:{{navbarBtn.height}}px;background:{{navbarData.btnBgColor ? navbarData.btnBgColor : 'transparent'}};border-color:{{navbarData.borderColor ? navbarData.borderColor : 'rgba(0,0,0,0.3)'}}"> 
+      <image wx:if='{{haveBack}}' bindtap="_goBack" class="floatL" src="../../images/navbar_back_{{navbarData.iconColor ? navbarData.iconColor : 'black'}}.png"></image>      
+      <view wx:if='{{haveBack}}' class="floatL" style="border-color:{{navbarData.borderColor ? navbarData.borderColor : 'rgba(0,0,0,0.3)'}}"></view>
+      <image bindtap="_goHome" src="../../images/navbar_home_{{navbarData.iconColor ? navbarData.iconColor : 'black'}}.png"></image>
+  </view>
+</view>
+<!-- <view class="navbar-loading" style='height:{{navbarHeight}}px;line-height:{{navbarHeight}}px;'>
+  <text>...</text>
+</view> -->

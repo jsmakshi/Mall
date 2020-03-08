@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/beeplus/beeplus",
+    "pages/takeMeal/takeMeal",
+    "pages/my/my"
+  ],
+  "tabBar": {
+    "color": "#A8A8A8",
+    "selectedColor": "#0E0E0E", 
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "点餐",
+        "iconPath": "./images/tab-icon1.png",
+        "selectedIconPath": "./images/tab-icon1-active.png"
+      },
+      {
+        "pagePath": "pages/beeplus/beeplus",
+        "text": "BEE+",
+        "iconPath": "./images/tab-icon2.png",
+        "selectedIconPath": "./images/tab-icon2-active.png"
+      },
+      {
+        "pagePath": "pages/takeMeal/takeMeal",
+        "text": "取餐",
+        "iconPath": "./images/tab-icon3.png",
+        "selectedIconPath": "./images/tab-icon3-active.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "./images/tab-icon4.png",
+        "selectedIconPath": "./images/tab-icon4-active.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
