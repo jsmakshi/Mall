@@ -16,7 +16,7 @@
     </view>
   </view>
   <view class="content">
-    <scroll-view class="menu-nav"  style="height: calc(100vh - 244)rpx" scroll-y="true" scroll-with-animation="true" enable-back-to-top="true" scroll-top="100px"	 scroll-into-view="{{toNavView}}">
+    <scroll-view class="menu-nav"  style="height: calc(100vh - 244)rpx" scroll-y="true" scroll-with-animation="true" enable-back-to-top="true"	 scroll-into-view="{{toNavView}}" scroll-top="{{scrollTop}}">
       <view wx:for="{{menuNav}}" wx:key="index" class="item {{menuNavIndex == index && 'active'}}" bindtap="{{menuNavIndex != index && 'menuClick'}}"
          data-index="{{index}}"  id="{{'nav'+index}}">
         <view class="icon">

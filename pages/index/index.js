@@ -1,7 +1,7 @@
 //index.js
 //获取应用实例
 const app = getApp()
-
+import util from "../../utils/util.js";
 Page({
   data: {
     menuNavIndex:0,
@@ -67,42 +67,42 @@ Page({
             pic:"../../images/item.png",
             name:"麋鹿姜饼拿铁",
             desc:"很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price:"58.88",
+            price:"58",
             id: 1
           },
           {
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 2
           },
           {
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 3
           },
           {
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 4
           },
           {
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 5
           },
           {
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 6
           }
         ]
@@ -115,28 +115,28 @@ Page({
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 1
           },
           {
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 2
           },
           {
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 3
           },
           {
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 4
           }
         ]
@@ -149,28 +149,28 @@ Page({
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 1
           },
           {
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 2
           },
           {
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 3
           },
           {
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 4
           }
         ]
@@ -183,28 +183,28 @@ Page({
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 1
           },
           {
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 2
           },
           {
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 3
           },
           {
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 4
           }
         ]
@@ -217,28 +217,28 @@ Page({
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 1
           },
           {
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 2
           },
           {
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 3
           },
           {
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 4
           }
         ]
@@ -251,28 +251,28 @@ Page({
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 1
           },
           {
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 2
           },
           {
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 3
           },
           {
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 4
           }
         ]
@@ -285,28 +285,28 @@ Page({
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 1
           },
           {
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 2
           },
           {
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 3
           },
           {
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 4
           }
         ]
@@ -319,28 +319,28 @@ Page({
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 1
           },
           {
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 2
           },
           {
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 3
           },
           {
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 4
           }
         ]
@@ -353,28 +353,28 @@ Page({
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 1
           },
           {
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 2
           },
           {
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 3
           },
           {
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 4
           }
         ]
@@ -387,35 +387,36 @@ Page({
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 1
           },
           {
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 2
           },
           {
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 3
           },
           {
             pic: "../../images/item.png",
             name: "麋鹿姜饼拿铁",
             desc: "很有艺术感的麋鹿蛋糕，鹿角用巧克力做的果酱淋在上面",
-            price: "58.88",
+            price: "58",
             id: 4
           }
         ]
       },
     ],
     toView:"",
-    toNavView:""
+    toNavView:"",
+    scrollTop:0
   },
   behaviors:[],
   onLoad: function () {
@@ -435,18 +436,26 @@ Page({
     });
   },
   scrollList(e){
-    let scrollTop = e.detail.scrollTop;
-    console.log(scrollTop)
+    this.gotoUnlock(e);
+  },
+  gotoUnlock: util.debounce(function (e) {
+    let scrollTop = e[0].detail.scrollTop;
     this.data.list.forEach((item,index) => {
-      if (scrollTop >= (item.offsetTop - 210) && scrollTop <= (item.offsetTop - 210 + item.height)) {
+      if (scrollTop >= (item.offsetTop - 157.5) && scrollTop <= (item.offsetTop - 157.5 + item.height)) {
         console.log((item.offsetTop - 210), (item.offsetTop - 210 + item.height))
         this.setData({
           menuNavIndex: index,
           toNavView:"nav"+index
+        },_ => {
+          if (index == 0) {
+            this.setData({
+              scrollTop: 0
+            });
+          }
         });
       }
     })
-  },
+  },0),
   menuClick(e){
     let index = e.currentTarget.dataset.index;
     console.log(e,'index')
